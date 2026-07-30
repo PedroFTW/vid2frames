@@ -45,7 +45,7 @@ def get_frames(filepath: str, quantity: int, outputdir: str):
 
     sys.stdout.write(f"\r{100:.1f} % complete")
 
-if __name__ == "__main__":
+def main():
     args = get_args()
     get_frames(args.filepath, args.quantity, args.outputdir)
     print()
